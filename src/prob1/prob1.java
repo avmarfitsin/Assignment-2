@@ -1,7 +1,7 @@
 package prob1;
 
 public class prob1 {
-    static void sort( int[] a, int arraySize)
+    static void Problem1Sort( int[] a, int arraySize)
     {
         int i=1; 
         int m = a[0]; 
@@ -58,7 +58,7 @@ public class prob1 {
     public static void main(String[] args) 
     {
     	int[] arr={5464,21231,877,11,230};
-    	sort(arr,5);
+    	Problem1Sort(arr,5);
     	for(int i=0; i<arr.length; i++)
         {
        	 System.out.print(arr[i] + " ");

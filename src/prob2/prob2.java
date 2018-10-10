@@ -1,7 +1,7 @@
 package prob2;
 
 public class prob2{ 
-    public static void merge(int[] arr, int arraySize) 
+    public static void mergeSort(int[] arr, int arraySize) 
     { 
     	int i=0;
     	int a=0; 
@@ -30,8 +30,8 @@ public class prob2{
                 rsd[i-centre] = arr[i]; 
                 i++;
             } 
-            merge(lsd,arraySize); 
-            merge(rsd,arraySize); 
+            mergeSort(lsd,arraySize); 
+            mergeSort(rsd,arraySize); 
   
             do 
             { 
@@ -75,7 +75,7 @@ public class prob2{
     public static void main(String[] args) 
     { 
         int arr[] = {43734,21432,444,6568}; 
-        merge(arr,4);  
+        mergeSort(arr,4);  
         print(arr);
     }
 }

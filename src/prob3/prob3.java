@@ -39,7 +39,7 @@ public class prob3 {
 		}
 		
 		
-		public static void print()
+		public static void printList()
 		{
 			try{
 			Node point=new Node();
@@ -48,10 +48,10 @@ public class prob3 {
 				{
 					if(tempmin==0)
 					{
-						System.out.print(point.ine);
+						System.out.printList(point.ine);
 					}
 					else
-					System.out.print(","+point.ine);
+					System.out.printList(","+point.ine);
 					point=point.next;	
 				}
 			}
@@ -128,6 +128,10 @@ public class prob3 {
 		public static void main(String[] args)
 		{
 			LinkedList();
+			add(1);
+			add(2);
+			add(3);
+			printList();
 			quicksort();
 		}
 }
